@@ -1,0 +1,17 @@
+.row{
+    padding: 0px;
+}
+.card-header{
+    text-align: center;
+    background: none;
+}
+.card-body{
+    padding: 0px;
+    border: none !important;
+}
+
+.list-group{
+
+    width: 100%;
+    height:100%;
+}
