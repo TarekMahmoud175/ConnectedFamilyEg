@@ -12,16 +12,32 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
+        <!-- binding user name and photo -->
+        <li class="nav-item">
+          <a class="UserName">
+            <img class="img-thumbnail" src="../../assets/logo.png"  alt="pp"
+              style="margin-right: 5px; border-radius: 50%;  width: 50px; height: 50px;">
+            UserName</a>
+        </li>
+        <!-- end -->
         <li class="nav-item dropdown ">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <img src="" alt="">
-            <span>UserName</span>
-          </a>
+          <button class="nav-link  btn btn-default col-md-12" href="#" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-angle-down"></i>
+          </button>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item"><i class="fa fa-info-circle" aria-hidden="true"></i> | About Us</a>
+            <a class="dropdown-item"><i class="fa fa-envelope" aria-hidden="true"></i> | Contact Us </a>
+            <a class="dropdown-item"><i class="fa fa-question-circle" aria-hidden="true"></i> | FAQ </a>
+            <a class="dropdown-item"><i class="fas fa-users" aria-hidden="true"></i> | Crew</a>
+            <a class="dropdown-item"><i class="fas fa-user" aria-hidden="true"></i> | Committees</a>
+            <a class="dropdown-item"><i class="fa fa-calendar" aria-hidden="true"></i> | Events</a>
+            <div class="dropdown-divider" *ngIf="HasPermission"></div>
+            <a class="dropdown-item" *ngIf="HasPermission"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> |
+              Dashboard</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"> <i class="fa fa-pen" aria-hidden="true"></i> | Edit Profile</a>
+            <a class="dropdown-item"> <i class="fas fa-sign-out-alt" aria-hidden="true"></i> | Logout</a>
           </div>
         </li>
       </ul>
