@@ -1,5 +1,6 @@
 nav {
     box-shadow: 0 0 7px #e2e2e2;
+
 }
 
 .navbar-brand {
@@ -40,8 +41,8 @@ nav {
 }
 
 .profile img {
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 70px;
     border-radius: 50%;
 }
 .profile span{

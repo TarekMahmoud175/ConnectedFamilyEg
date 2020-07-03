@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserInfoComponent } from './profile/user-info/user-info.component';
-import { UserEventsComponent } from './profile/user-events/user-events.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
     HeaderComponent,
     ProfileComponent,
     UserInfoComponent,
-    UserEventsComponent
   ],
   imports: [
     BrowserModule,
