@@ -1,43 +1,55 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="../../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      <span> |</span>
-      <span> Connected</span>
-      <span> Family</span>
+      <img src="assets/images/connected-family.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+      <span class="blue">Connected</span>
+      <span class="red"> Family</span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" [ngClass]="{'active': dropmenu}" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation" (click)="drop($event)">
+      <svg viewBox="0 0 64 48">
+        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+      </svg>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         <!-- binding user name and photo -->
         <li class="nav-item">
-          <a class="UserName">
-            <img class="img-thumbnail" src="../../assets/logo.png"  alt="pp"
-              style="margin-right: 5px; border-radius: 50%;  width: 50px; height: 50px;">
-            UserName</a>
+          <a class="nav-link" href="#">Crew</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Committees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
         </li>
         <!-- end -->
-        <li class="nav-item dropdown ">
-          <button class="nav-link  btn btn-default col-md-12" href="#" id="navbarDropdownMenuLink"
+        <li class="nav-item dropdown">
+          <button class="nav-link btn btn-default shadow-none border-0" href="#" id="navbarDropdownMenuLink"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-angle-down"></i>
+            A5oyyyyya <i class="fas fa-angle-down"></i>
           </button>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item"><i class="fa fa-info-circle" aria-hidden="true"></i> | About Us</a>
-            <a class="dropdown-item"><i class="fa fa-envelope" aria-hidden="true"></i> | Contact Us </a>
-            <a class="dropdown-item"><i class="fa fa-question-circle" aria-hidden="true"></i> | FAQ </a>
-            <a class="dropdown-item"><i class="fas fa-users" aria-hidden="true"></i> | Crew</a>
-            <a class="dropdown-item"><i class="fas fa-user" aria-hidden="true"></i> | Committees</a>
-            <a class="dropdown-item"><i class="fa fa-calendar" aria-hidden="true"></i> | Events</a>
-            <div class="dropdown-divider" *ngIf="HasPermission"></div>
-            <a class="dropdown-item" *ngIf="HasPermission"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> |
-              Dashboard</a>
+            <div class="profile">
+              <div class="row">
+                <div class="col-md-5 p-0 m-sm-auto text-center">
+                  <img src="assets/WhatsApp Image 2019-04-19 at 2.13.31 AM (2).jpeg" alt="">
+                </div>
+                <div class="col-md-7 p-md-0">
+                  <p class="mb-2">A5oyyyyya</p>
+                  <span [routerLink]="['/profile']">Profile</span>
+                </div>
+              </div>
+            </div>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item"> <i class="fa fa-pen" aria-hidden="true"></i> | Edit Profile</a>
-            <a class="dropdown-item"> <i class="fas fa-sign-out-alt" aria-hidden="true"></i> | Logout</a>
+            <a class="dropdown-item" *ngIf="HasPermission">Dashboard</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item">Logout</a>
           </div>
         </li>
       </ul>

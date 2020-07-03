@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  
+  dropmenu:boolean = false
   constructor() { }
   HasPermission :boolean = true;
   
   ngOnInit(): void {
   }
 
+  drop(e){
+    this.dropmenu = !this.dropmenu
+  }
 }
