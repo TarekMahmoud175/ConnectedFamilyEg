@@ -1,30 +1,29 @@
 .row{
-    padding: 15px;
+    padding: 20px;
 }
 img{
-    width: 256px;
-    border-radius: 50% !important;
-    height: 200px !important;
+    width: 180px;
+    padding: 0px !important;
+    height: 180px !important;
 }
-label{
-    
-    /* font-weight: bold; */
-}
-span{
-    
-    /* font-weight: bold; */
-    
-}
-.card.third{
-    height: 289px;
-}
-.card-body{
-    color: #0275d8;
-  
+.img-div{
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    float: right;    
 }
 .card {
     border: 0.5px solid #0275d8;
 }
+.card-body{
+    color: #0275d8; 
+}
 .card:hover{
     border: 0.5px solid palevioletred   ;
+}
+button{
+    padding:8px ;
+    margin: 5px;
+}
+h5{
+font-size: medium;
 }
