@@ -7,9 +7,11 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { UserInfoComponent } from './profile/user-info/user-info.component';
 import { profileControlsComponent } from './profile/profile-controls/profile-controls.component';
+import { UserInfoComponent } from './profile/user-info/user-info.component';
+import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { PostInputComponent } from './post-input/post-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -21,6 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserInfoComponent,
     profileControlsComponent,
     PostInputComponent,
+    HomeComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,
