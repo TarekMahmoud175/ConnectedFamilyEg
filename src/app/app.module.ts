@@ -12,11 +12,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { profileControlsComponent } from './profile/profile-controls/profile-controls.component';
 import { UserInfoComponent } from './profile/user-info/user-info.component';
 
-import { UserEventsComponent } from './profile/user-events/user-events.component';
+// import { UserEventsComponent } from './profile/user-events/user-events.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { HomeComponent } from './home/home.component';
+// import { HomeComponent } from './home/home.component';
 import { EventsComponent } from './dashboard/events/events.component';
 import { DashboardMainLayoutComponent } from './dashboard-main-layout/dashboard-main-layout.component';
 import { EventDetailsComponent } from './dashboard/events/event-details/event-details.component';
@@ -38,7 +38,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { PostInputComponent } from './post-input/post-input.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     ProfileComponent,
     UserInfoComponent,
-    UserEventsComponent,
+    // UserEventsComponent,
     DashboardComponent,
     SideNavComponent,
   //HomeComponent,
@@ -67,7 +67,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommiteesComponent,
     AboutUsComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
     profileControlsComponent,
     PostInputComponent,
     HomeComponent,
