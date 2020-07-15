@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HomeComponent } from './home/home.component';
 import { EventsComponent } from './dashboard/events/events.component';
 import { EventDetailsComponent } from './dashboard/events/event-details/event-details.component';
 import { AddEventComponent } from './dashboard/events/add-event/add-event.component';
@@ -20,40 +19,43 @@ import { LogsComponent } from './dashboard/logs/logs.component';
 import { PostInputComponent } from './post-input/post-input.component';
 import { HomeComponent } from './home/home.component';
 import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
-   {path:'',redirectTo:'/home',pathMatch:'full'},
+  //home
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  //signIn
+  { path: 'signIn', component: SignInComponent },
+  //profile
   {
-    path: 'profile', component: ProfileComponent, children:[
+    path: 'profile', component: ProfileComponent, children: [
       { path: '', component: PostInputComponent },
-      {path:'EditProfile' , component: EditProfileComponent  },
+      {path: 'EditProfile' , component: EditProfileComponent  },
     ]
   },
-  { path: 'home', component: HomeComponent },
-  { path: "", component: HomeComponent },
-  { path: "profile", component: ProfileComponent },
-  { path: "dashboard", component: DashboardComponent },
+  //dashboard
+  { path: 'dashboard', component: DashboardComponent },
   // events
-  { path: "dashboard/events", component: EventsComponent },
-  { path: "dashboard/events/event-details", component: EventDetailsComponent },
-  { path: "dashboard/events/add", component: AddEventComponent },
+  { path: 'dashboard/events', component: EventsComponent },
+  { path: 'dashboard/events/event-details', component: EventDetailsComponent },
+  { path: 'dashboard/events/add', component: AddEventComponent },
   // forms
-  { path: "dashboard/forms", component: FormsComponent },
-  { path: "dashboard/forms/form-details", component: EventDetailsComponent },
-  { path: "dashboard/forms/add", component: AddFormComponent },
+  { path: 'dashboard/forms', component: FormsComponent },
+  { path: 'dashboard/forms/form-details', component: EventDetailsComponent },
+  { path: 'dashboard/forms/add', component: AddFormComponent },
   // preferences
-  { path: "dashboard/preferences", component: PreferenceComponent },
-  { path: "dashboard/preferences/add", component: AddPreferenceComponent },
+  { path: 'dashboard/preferences', component: PreferenceComponent },
+  { path: 'dashboard/preferences/add', component: AddPreferenceComponent },
   // interviews
-  { path: "dashboard/interviews", component: InterviewsComponent },
-  { path: "dashboard/interviews/add", component: AddInterviewComponent },
+  { path: 'dashboard/interviews', component: InterviewsComponent },
+  { path: 'dashboard/interviews/add', component: AddInterviewComponent },
   // interviews
-  { path: "dashboard/group_discussions", component: GroupDiscussionsComponent },
-  { path: "dashboard/group_discussions/add", component: AddGroupDiscussionComponent },
-
-  //logs
-  { path: "dashboard/logs", component: LogsComponent },
-  { path: "dashboard/logs/id", component: LogsComponent },
+  { path: 'dashboard/group_discussions', component: GroupDiscussionsComponent },
+  { path: 'dashboard/group_discussions/add', component: AddGroupDiscussionComponent },
+  //Logs
+  { path: 'dashboard/logs', component: LogsComponent },
+  { path: 'dashboard/logs/id', component: LogsComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

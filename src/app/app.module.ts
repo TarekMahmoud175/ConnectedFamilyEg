@@ -13,10 +13,9 @@ import { profileControlsComponent } from './profile/profile-controls/profile-con
 import { UserInfoComponent } from './profile/user-info/user-info.component';
 
 // import { UserEventsComponent } from './profile/user-events/user-events.component';
-import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-// import { HomeComponent } from './home/home.component';
 import { EventsComponent } from './dashboard/events/events.component';
 import { DashboardMainLayoutComponent } from './dashboard-main-layout/dashboard-main-layout.component';
 import { EventDetailsComponent } from './dashboard/events/event-details/event-details.component';
@@ -38,7 +37,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { PostInputComponent } from './post-input/post-input.component';
-// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +48,6 @@ import { PostInputComponent } from './post-input/post-input.component';
     // UserEventsComponent,
     DashboardComponent,
     SideNavComponent,
-  //HomeComponent,
     EventsComponent,
     DashboardMainLayoutComponent,
     EventDetailsComponent,
@@ -72,6 +70,7 @@ import { PostInputComponent } from './post-input/post-input.component';
     PostInputComponent,
     HomeComponent,
     EditProfileComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
