@@ -1,0 +1,37 @@
+<app-dashboard-main-layout [title]="'Forms'" [addForm]="true" [routerUrl]="'/dashboard/forms/add'">
+    <!-- search -->
+    <div class="search w-100 py-3">
+      <!-- search -->
+      <div class="form-group mb-0">
+        <div class="p-0 position-relative">
+          <label for="search" class="position-absolute"><i class="fas fa-search"></i></label>
+          <input id="search" type="text" class="form-control search-input" name="search" placeholder="Search for event">
+        </div>
+      </div>
+    </div>
+    <!-- table -->
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" width="15">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Response</th>
+            <th scope="col" >Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a [routerLink]="['/dashboard/events/event-details']">Eureka</a> </td>
+            <td>200</td>
+            <td>
+              <button class="publish mr-3">View Form</button>
+              <button class="publish">Export Response</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </app-dashboard-main-layout>
+  

@@ -1,0 +1,110 @@
+<nav id="sideNav" class="collapse" data-wow-duration="0s" data-wow-delay="0s">
+  <!--  list  -->
+  <ul class="nav nav-tabs py-3">
+    <div class="pb-4 brand">
+      <img src="assets/images/logo.png" width="25%" alt="connected-family">
+      <span class="ml-2">Dashboard</span>
+    </div>
+    <div class="container">
+      <!-- dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dashboard']"><i class="fas fa-tachometer-alt mr-2"></i>Dashboard</a>
+      </li>
+      <!-- events -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dashboard/events']" ><i class="fas fa-calendar-day mr-2"></i>Events</a>
+        <div class="collapse navbar-collapse" id="side_nav_events">
+          <div class="li">
+            <a class="dropdown-li">Add</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li">View and Manege</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li">Event Statistics</a>
+          </div>
+        </div>
+      </li>
+      <!-- forms -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dashboard/forms']"><i class="far fa-edit mr-2"></i>Forms</a>
+      </li>
+      <!-- Preferences -->
+      <li class="nav-item">
+        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
+          data-target="#side_nav_preferences"><i class="fas fa-star mr-2"></i>Preferences</a>
+        <div class="collapse navbar-collapse" id="side_nav_preferences">
+          <div class="li" [routerLink]="['/dashboard/preferences/add']">
+            <a class="dropdown-li">Add</a>
+          </div>
+          <div class="li" [routerLink]="['/dashboard/preferences']">
+            <a class="dropdown-li">View and Manege</a>
+          </div>
+        </div>
+      </li>
+      <!-- interviews -->
+      <li class="nav-item">
+        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
+          data-target="#side_nav_interviews"><i class="fas fa-calendar-alt mr-2"></i>Interviews</a>
+        <div class="collapse navbar-collapse" id="side_nav_interviews">
+          <div class="li">
+            <a class="dropdown-li" [routerLink]="['/dashboard/interviews/add']">Add</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li" [routerLink]="['/dashboard/interviews']">View and Manege</a>
+          </div>
+        </div>
+      </li>
+      <!-- group desciussion -->
+      <li class="nav-item">
+        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
+          data-target="#side_nav_descussion"><i class="fas fa-calendar-alt mr-2"></i>Group Discussions</a>
+        <div class="collapse navbar-collapse" id="side_nav_descussion">
+          <div class="li">
+            <a class="dropdown-li" [routerLink]="['/dashboard/group_discussions/add']">Add</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li" [routerLink]="['/dashboard/group_discussions']">View and Manege</a>
+          </div>
+        </div>
+      </li>
+      <!-- participants -->
+      <li class="nav-item">
+        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
+          data-target="#side_nav_participants"><i class="fas fa-user mr-2"></i>Participants</a>
+        <div class="collapse navbar-collapse" id="side_nav_participants">
+          <div class="li">
+            <a class="dropdown-li">Manage Participants</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li">Add Evaluation</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li">Manage Evaluations</a>
+          </div>
+        </div>
+      </li>
+      <!-- Recruitment -->
+      <li class="nav-item">
+        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
+          data-target="#side_nav_recruitment"><i class="fas fa-user mr-2"></i>Recruitment</a>
+        <div class="collapse navbar-collapse" id="side_nav_recruitment">
+          <div class="li">
+            <a class="dropdown-li">Interviews</a>
+          </div>
+          <div class="li">
+            <a class="dropdown-li">Participants</a>
+          </div>
+        </div>
+      </li>
+      <!-- users -->
+      <li class="nav-item">
+        <a class="nav-link" role="button"><i class="fas fa-users mr-2"></i>Users</a>
+      </li>
+      <!-- logs -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dashboard/logs']"><i class="fas fa-history mr-2"></i>Logs</a>
+      </li>
+    </div>
+  </ul>
+</nav>

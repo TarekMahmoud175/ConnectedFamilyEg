@@ -40,10 +40,13 @@ nav {
     }
 }
 
-.profile img {
-    width: 75px;
-    height: 70px;
+.profile .img {
+    background: url('../../assets/WhatsApp Image 2019-04-19 at 2.13.31 AM (2).jpeg');
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
+    background-position: top center;
+    background-size: cover;
 }
 .profile span{
     cursor: pointer;

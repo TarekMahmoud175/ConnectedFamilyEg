@@ -1,0 +1,47 @@
+<app-dashboard-main-layout [title]="'Events'" [addForm]="true" [routerUrl]="'/dashboard/events/add'">
+  <!-- search -->
+  <div class="search w-100 py-3">
+    <!-- search -->
+    <div class="form-group mb-0">
+      <div class="p-0 position-relative">
+        <label for="search" class="position-absolute"><i class="fas fa-search"></i></label>
+        <input id="search" type="text" class="form-control search-input" name="search" placeholder="Search for event">
+      </div>
+    </div>
+  </div>
+  <!-- table -->
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" width="15">#</th>
+          <th scope="col" width="15">#</th>
+          <th scope="col" width="10">Year</th>
+          <th scope="col" width="80">Name</th>
+          <th scope="col" width="50">Start</th>
+          <th scope="col" width="50">End</th>
+          <th scope="col" >Description</th>
+          <th scope="col" width="30">Pref. type</th>
+          <th scope="col" width="30">Published</th>
+          <th scope="col" width="80">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1000</td>
+          <td>2019</td>
+          <td><a [routerLink]="['/dashboard/events/event-details']">Eureka</a> </td>
+          <td>2018-04-12 22:00:00</td>
+          <td>2018-04-12 22:00:00</td>
+          <td>Bla bla bla</td>
+          <td>2r2</td>
+          <td>No</td>
+          <td>
+            <button class="publish">Publish</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</app-dashboard-main-layout>

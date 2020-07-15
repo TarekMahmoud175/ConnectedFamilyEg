@@ -1,0 +1,46 @@
+<app-dashboard-main-layout [title]="'Preferences'" [addForm]="true" [routerUrl]="'/dashboard/preferences/add'">
+    <!-- search -->
+    <div class="search w-100 py-3">
+      <!-- search -->
+      <div class="form-group mb-0">
+        <div class="p-0 position-relative">
+          <label for="search" class="position-absolute"><i class="fas fa-search"></i></label>
+          <input id="search" type="text" class="form-control search-input" name="search" placeholder="Search for event">
+        </div>
+      </div>
+    </div>
+    <!-- table -->
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" width="15">#</th>
+            <th scope="col" width="15">#</th>
+            <th scope="col" width="10">Date</th>
+            <th scope="col" width="80">Event</th>
+            <th scope="col" width="50">Preference</th>
+            <th scope="col" width="50">Available</th>
+            <th scope="col" width="50">Max.</th>
+            <th scope="col" width="30">Taken</th>
+            <th scope="col" width="80">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>1000</td>
+            <td><a [routerLink]="['/dashboard/events/event-details']">Saturday 01/12/2018 11:00AM</a> </td>
+            <td>AC(2019)</td>
+            <td>ALL</td>
+            <td>NOT Available</td>
+            <td>6</td>
+            <td>6</td>
+            <td>
+              <!-- <button class="publish">Publish</button> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </app-dashboard-main-layout>
+  

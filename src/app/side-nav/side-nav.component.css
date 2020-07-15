@@ -1,0 +1,127 @@
+/* sidenav */
+#sideNav {
+    transition: 500ms ease;
+    background: white;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 20%;
+}
+
+.nav {
+    position: relative;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    background: #f8f9fa!important;
+    height: 100%;
+    border: 0;
+    display: block;
+    overflow: overlay;
+    touch-action: unset;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.brand span{
+    font-family: 'Cookie', cursive;
+    font-size: 23px;
+}
+@media (max-width: 767px) {
+    .admin-name {
+        display: none;
+    }
+    #sideNav {
+        transition: 10ms ease;
+        z-index: 10;
+        width: 80%;
+        background: #a5a5a54f;
+        box-shadow: none !important;
+    }
+
+    .nav {
+        position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    #sideNav {
+        display: block;
+    }
+    .mains {
+        padding-left: 15rem !important;
+    }
+}
+
+.nav .nav-item {
+    border: 0;
+    margin-bottom: .5rem;
+}
+
+.nav i {
+    font-weight: 900;
+}
+
+.nav .nav-item .nav-link {
+    /* font-weight: 500; */
+    font-size: 15px;
+    border: 1px solid transparent;
+    transition: 500ms ease;
+    border-radius: 2px;
+    color: #3f4253;
+    clip-path: circle(100% at 10% 10%);
+}
+
+.dropdown-menu .dropdown-item {
+    transition: 500ms ease;
+    border-radius: 3px;
+    color: #3f4253;
+    clip-path: circle(100% at 10% 10%);
+    display: flex;
+    align-items: center;
+
+}
+
+.nav .nav-item .navbar-collapse .li:hover {
+    border: 0 !important;
+}
+
+.nav .nav-item .nav-link:hover,
+.nav .nav-item .navbar-collapse .li:hover,
+.dropdown-menu .dropdown-item:hover {
+    background: #e5f2fb;
+    color: #3587b6;
+    cursor: pointer;clip-path: circle(75%);
+    border-left: 2px solid #3587b6;
+    
+}
+
+.nav .nav-item .nav-link:hover i {
+    color: #3587b6;
+}
+
+.navbar-collapse {
+    margin: 0.1rem;
+    margin-left: 2rem;
+}
+
+.nav .nav-item .navbar-collapse .li {
+    padding: 8px 5px;
+    transition: 500ms ease;
+    border-radius: 3px;
+    font-size: 14px;
+    clip-path: circle(100% at 10% 10%);
+}
+
+.nav .nav-item .navbar-collapse .li a{
+    padding: 5px;
+    color: #222b3a;
+    transition: 400ms ease;
+}
+
+.nav .nav-item .navbar-collapse .li:hover a {
+    color: #3587b6;
+    text-decoration: none;
+}

@@ -1,0 +1,48 @@
+<app-dashboard-main-layout [title]="'Add Form'">
+    <div class="main_content">
+      <form class="w-100 row m-0">
+        <!-- {{-- inputs -->
+        <div class="col-md-12 p-0">
+          <div class="form">
+            <div class="container">
+              <!-- summary -->
+              <!-- names -->
+              <div class="form-group row">
+                <!-- name -->
+                <div class="col-md-12">
+                  <label for="name" class="col">Name</label>
+                  <input id="name" type="text" class="form-control " name="name" required autofocus
+                    placeholder="Form Name">
+                </div>
+              </div>
+              <!-- Description -->
+              <div class="form-group row">
+                <div class="col-md-12 ">
+                  <label for="description" class="col">Description</label>
+                  <textarea id="description" class="form-control" id="" cols="20" rows="5" placeholder="Form Description"></textarea>
+                </div>
+              </div>
+              <!-- questions -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- btns -->
+        <div class="form-group row w-100 mx-0 d-flex justify-content-center">
+          <!-- submit -->
+          <div class="col-md-4 mb-2">
+            <button type="submit" class="btn btn-primary w-100">
+              Add
+            </button>
+          </div>
+          <!-- back -->
+          <div class="col-md-2">
+            <span class="btn btn-primary w-100 btn-dis p-2" [routerLink]="['/dashboard/forms']">
+              Discard
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </app-dashboard-main-layout>
+  

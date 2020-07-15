@@ -1,0 +1,140 @@
+.header {
+    border-bottom: 1px solid #222b3a1a;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head {
+    font-size: 35px;
+}
+
+.nav-link {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    transition: 500ms ease;
+    color: #6f7181;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.dropdown-menu {
+    font-family: 'Dosis', sans-serif;
+    border: 0;
+    background: #f9f9f9;
+    box-shadow: 0 0 20px #e6e6e6f0;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        min-width: 15rem !important;
+        left: -90%;
+    }
+}
+
+.navbar-nav .dropdown-menu::after {
+    content: "";
+    position: absolute;
+    top: -4%;
+    left: 45%;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #f9f9f9;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 0.5rem 2rem;
+    transition: .5s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #e5f2fb;
+    color: #3587b6;
+    cursor: pointer;
+}
+
+
+.navbar-toggler {
+    --color: #222B3A;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none !important;
+    -webkit-appearence: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-toggler svg {
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+    stroke: var(--color);
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    display: block;
+    position: absolute;
+}
+
+.navbar-toggler svg path {
+    transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
+    stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
+    stroke-dashoffset: var(--offset, 126px);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.navbar-toggler svg path:nth-child(2) {
+    --duration: .7s;
+    --easing: ease-in;
+    --offset: 100px;
+    --array-2: 74px;
+}
+
+.navbar-toggler svg path:nth-child(3) {
+    --offset: 133px;
+    --array-2: 107px;
+}
+
+.navbar-toggler.active svg path {
+    --offset: 57px;
+}
+
+.navbar-toggler.active svg path:nth-child(1),
+.navbar-toggler.active svg path:nth-child(3) {
+    --delay: .15s;
+    --easing: cubic-bezier(.2, .4, .2, 1.1);
+}
+
+.navbar-toggler.active svg path:nth-child(2) {
+    --duration: .4s;
+    --offset: 2px;
+    --array-1: 1px;
+}
+
+.navbar-toggler.active svg path:nth-child(3) {
+    --offset: 58px;
+}
+
+
+.add a{
+    transition: 500ms ease;
+    background: #4ca0d6;
+    border-color: #4ca0d6;
+}
+.add a:hover{
+    background: #83b9db;
+    border-color: #83b9db;
+}

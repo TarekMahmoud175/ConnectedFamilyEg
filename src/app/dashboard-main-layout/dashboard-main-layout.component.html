@@ -1,0 +1,52 @@
+<div class="dashboard">
+  <app-side-nav></app-side-nav>
+  <div class="main">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" [ngClass]="{'active': dropmenu}" type="button" data-toggle="collapse"
+          data-target="#sideNav" aria-expanded="false" aria-label="Toggle navigation" (click)="drop($event)">
+          <svg viewBox="0 0 64 48">
+            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+            <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+          </svg>
+        </button>
+        <ul class="navbar-nav ml-auto">
+          <!-- dropdown -->
+          <li class="nav-item dropdown">
+            <button class="nav-link btn btn-default shadow-none border-0" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              A5oyyyyya <i class="fas fa-angle-down"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" [routerLink]="['profile']">Profile</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main content -->
+    <div class="content p-4">
+      <!-- header -->
+      <div class="header p-3">
+        <div class="head">
+          <h3>{{title}}</h3>
+        </div>
+        <!-- add -->
+        <div class="add" *ngIf="addForm">
+          <a class="btn btn-primary" [routerLink]="routerUrl">
+            <i class="fas fa-plus mr-2"></i>
+            <span>Add</span>
+          </a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="main_content">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

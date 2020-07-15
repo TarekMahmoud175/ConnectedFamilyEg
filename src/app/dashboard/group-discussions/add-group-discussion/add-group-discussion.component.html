@@ -1,0 +1,61 @@
+<app-dashboard-main-layout [title]="'Add Group discussion'">
+  <div class="main_content">
+    <form class="w-100 row m-0">
+      <!-- inputs -->
+      <div class="col-md-12 p-0">
+        <div class="form">
+          <div class="container">
+            <div class="form-group row">
+              <!-- name -->
+              <div class="col-md-12">
+                <label for="event" class="col">Event</label>
+                <select class="form-control" id="event">
+                  <option selected disabled>Event</option>
+                </select>
+              </div>
+            </div>
+            <!-- prefernce -->
+            <div class="form-group row">
+              <div class="col-md-12">
+                <label for="Preference" class="col">Preference</label>
+                <select class="form-control" id="Preference">
+                  <option selected disabled>Preference</option>
+                </select>
+              </div>
+            </div>
+            <!-- date -->
+            <div class="form-group row">
+              <div class="col-md-12">
+                <label for="date" class="col">Date</label>
+                <input id="date" type="date" class="form-control " name="date" required placeholder="Date">
+              </div>
+            </div>
+            <!-- max participants -->
+            <div class="form-group row">
+              <div class="col-md-12">
+                <label for="participants" class="col">Max participants</label>
+                <input id="participants" type="tel" class="form-control " name="participants" required
+                  placeholder="Max participants">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- btns -->
+      <div class="form-group row w-100 mx-0 d-flex justify-content-center">
+        <!-- submit -->
+        <div class="col-md-4 mb-2">
+          <button type="submit" class="btn btn-primary w-100">
+            Add
+          </button>
+        </div>
+        <!-- back -->
+        <div class="col-md-2">
+          <span class="btn btn-primary w-100 btn-dis p-2" [routerLink]="['/dashboard/group_discussions']">
+            Discard
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+</app-dashboard-main-layout>
