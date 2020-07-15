@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { EventsComponent } from './dashboard/events/events.component';
@@ -16,8 +17,19 @@ import { InterviewsComponent } from './dashboard/interviews/interviews.component
 import { AddInterviewComponent } from './dashboard/interviews/add-interview/add-interview.component';
 import { LogsComponent } from './dashboard/logs/logs.component';
 
+import { PostInputComponent } from './post-input/post-input.component';
+import { HomeComponent } from './home/home.component';
+import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 
 const routes: Routes = [
+   {path:'',redirectTo:'/home',pathMatch:'full'},
+  {
+    path: 'profile', component: ProfileComponent, children:[
+      { path: '', component: PostInputComponent },
+      {path:'EditProfile' , component: EditProfileComponent  },
+    ]
+  },
+  { path: 'home', component: HomeComponent },
   { path: "", component: HomeComponent },
   { path: "profile", component: ProfileComponent },
   { path: "dashboard", component: DashboardComponent },
@@ -43,7 +55,6 @@ const routes: Routes = [
   { path: "dashboard/logs", component: LogsComponent },
   { path: "dashboard/logs/id", component: LogsComponent },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

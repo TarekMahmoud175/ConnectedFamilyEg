@@ -1,0 +1,28 @@
+h5 {
+  font-size: medium;
+}
+.card {
+  border: 0.5px solid #0275d8;
+}
+.card:hover {
+  border: 0.5px solid palevioletred;
+}
+.checkbox-light {
+  margin-right: 5px;
+}
+.clear-card {
+  padding: 10px !important;
+}
+.custom-control {
+  position: relative;
+  display: inline-flex;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  /* opacity: 10; */
+}

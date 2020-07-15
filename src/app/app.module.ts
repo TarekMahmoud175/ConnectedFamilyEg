@@ -2,13 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { profileControlsComponent } from './profile/profile-controls/profile-controls.component';
 import { UserInfoComponent } from './profile/user-info/user-info.component';
+
 import { UserEventsComponent } from './profile/user-events/user-events.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -33,6 +36,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
+import { PostInputComponent } from './post-input/post-input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +49,7 @@ import { FooterComponent } from './footer/footer.component';
     UserEventsComponent,
     DashboardComponent,
     SideNavComponent,
-    HomeComponent,
+  //HomeComponent,
     EventsComponent,
     DashboardMainLayoutComponent,
     EventDetailsComponent,
@@ -61,6 +68,10 @@ import { FooterComponent } from './footer/footer.component';
     AboutUsComponent,
     ContactUsComponent,
     FooterComponent
+    profileControlsComponent,
+    PostInputComponent,
+    HomeComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +84,6 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
