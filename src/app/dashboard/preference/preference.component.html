@@ -1,0 +1,47 @@
+<app-dashboard-main-layout [title]="'Preferences'" [addForm]="true" [routerUrl]="'/dashboard/preferences/add'">
+  <!-- search -->
+  <div class="search w-100 py-3">
+    <!-- search -->
+    <div class="form-group mb-0">
+      <div class="p-0 position-relative">
+        <label for="search" class="position-absolute"><i class="fas fa-search"></i></label>
+        <input id="search" type="text" class="form-control search-input" name="search" placeholder="Search for event">
+      </div>
+    </div>
+  </div>
+  <!-- table -->
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" width="15">#</th>
+          <th scope="col" width="15">#</th>
+          <th scope="col" width="10">Event</th>
+          <th scope="col" width="80">Name</th>
+          <th scope="col" width="50">Type</th>
+          <th scope="col" width="50">Steps</th>
+          <th scope="col" width="50">MIn. Year</th>
+          <th scope="col" width="30">Collages</th>
+          <th scope="col" width="30">Departments</th>
+          <th scope="col" width="80">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1000</td>
+          <td>AC(2019)</td>
+          <td><a [routerLink]="['/dashboard/events/event-details']">Graphic design</a> </td>
+          <td>Course</td>
+          <td>IV</td>
+          <td>2nd Year</td>
+          <td>All</td>
+          <td>All</td>
+          <td>
+            <!-- <button class="publish">Publish</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</app-dashboard-main-layout>

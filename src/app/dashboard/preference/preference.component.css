@@ -1,0 +1,54 @@
+/* table */
+.search {
+    padding-bottom: .5rem !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search label {
+    top: 18%;
+    left: 13px;
+    margin: 0;
+    text-shadow: none;
+    color: #626262;
+    font-size: .9rem;
+}
+
+.search .search-input {
+    border: 1px solid #e1e1e1e3;
+    padding-left: 35px;
+    font-size: smaller;
+}
+
+.search .search-input:focus {
+    box-shadow: none;
+}
+
+table {
+    background: white;
+    border-radius: 5px;
+}
+
+.table thead th {
+    border-top: 0;
+}
+
+.table td {
+    border: 0;
+}
+
+.table td a {
+    color: #1c3053;
+    text-decoration: none;
+}
+.publish{
+    font-size: .9rem;
+    border: 0;
+    background: #00ff89;
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    padding: 8px;
+
+}

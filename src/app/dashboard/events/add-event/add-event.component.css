@@ -1,0 +1,30 @@
+/* form */
+.form {
+    padding: 2rem 10px;
+    background: #ffffff;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.form .form-control {
+    box-shadow: 0 0 5px #e2e2e2;
+    border: 0;
+    background: #f7f7f7;
+}
+
+.btn-dis {
+    background: transparent;
+    border: 0;
+    color: #1c3053 !important;
+    cursor: pointer;
+}
+
+label {
+    outline: none;
+    padding: 0;
+    color: #474747;
+}
+.note{
+    font-size: .8rem;
+    color: gray;
+}
