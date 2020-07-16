@@ -18,8 +18,8 @@ import { LogsComponent } from './dashboard/logs/logs.component';
 
 import { PostInputComponent } from './post-input/post-input.component';
 import { HomeComponent } from './home/home.component';
-import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 
 const routes: Routes = [
   //home
@@ -31,7 +31,7 @@ const routes: Routes = [
   {
     path: 'profile', component: ProfileComponent, children: [
       { path: '', component: PostInputComponent },
-      {path: 'EditProfile' , component: EditProfileComponent  },
+      { path: 'edit_profile', component: EditProfileComponent }
     ]
   },
   //dashboard

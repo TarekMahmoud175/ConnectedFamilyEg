@@ -12,4 +12,8 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggle(){
+    let nav = document.getElementById('sideNav')
+  }
+
 }

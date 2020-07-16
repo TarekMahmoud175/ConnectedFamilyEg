@@ -34,10 +34,9 @@ import { CommiteesComponent } from './commitees/commitees.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
-
-import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { PostInputComponent } from './post-input/post-input.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
