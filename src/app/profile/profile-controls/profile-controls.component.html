@@ -1,8 +1,14 @@
-<div class="row ">
-    <div class="col-md-12">
-        <hr>
-        <button class="btn btn-primary"><i class="fa fa-edit"> </i> Edit Profile</button>
-        <button class="btn btn-danger"><i class="fa fa-lightbulb"> </i> My Ideas</button>
-        <hr>
+<div class="row  justify-content-center ">
+    <div class="col-md-8">
+        <div class="list-group ">
+
+            <a class="list-group-item" [routerLink]="['/profile/']" 
+            routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+            <i class="fa fa-lightbulb">&nbsp;</i>
+             My Ideas</a>
+
+            <a class="list-group-item" [routerLink]="['/profile/User-Info']"><i class="fa fa-user">&nbsp;</i> My Info</a>
+            <a class="list-group-item" [routerLink]="['/profile/Edit-Profile']"><i class="fa fa-pen">&nbsp;</i> Edit Profile</a>
+        </div>
     </div>
 </div>
