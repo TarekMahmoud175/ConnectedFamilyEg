@@ -1,3 +1,13 @@
-button{
-    margin-left: 10px;
+.list-group{
+    margin-top: 15px;
+}
+.list-group-item{
+    background-color: #F8F9FA;
+    cursor: pointer;
+}
+.list-group-item:hover{
+    background-color: #E6F3FB;
+}
+a{
+    text-decoration: none;
 }

@@ -1,0 +1,43 @@
+.row{
+    padding: 20px;
+    text-align: center;
+    background-color: #F8F9FA;
+}
+.profile .img {
+    background-image: url('../../../assets/WhatsApp Image 2019-04-19 at 2.13.31 AM (2).jpeg');
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    background-size: cover;
+}
+
+.profile .img::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    height: 60px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 2px solid #2891d0;
+    border-bottom: 0;
+}
+
+.profile .img::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    height: 60px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 2px solid #e84e79;
+    border-bottom: 0;
+    transform: rotate(180deg);
+}
+

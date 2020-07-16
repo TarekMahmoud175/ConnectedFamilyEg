@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { profileControlsComponent } from './profile/profile-controls/profile-controls.component';
-import { UserInfoComponent } from './profile/user-info/user-info.component';
+import { UserPicComponent } from './profile/user-pic/user-pic.component';
 
 // import { UserEventsComponent } from './profile/user-events/user-events.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -34,16 +34,18 @@ import { CommiteesComponent } from './commitees/commitees.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { UserInfoComponent } from './profile/user-info/user-info.component';
 import { PostInputComponent } from './post-input/post-input.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    UserInfoComponent,
+    UserPicComponent,
     // UserEventsComponent,
     DashboardComponent,
     SideNavComponent,
@@ -70,6 +72,8 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
     HomeComponent,
     EditProfileComponent,
     SignInComponent,
+    UserInfoComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,

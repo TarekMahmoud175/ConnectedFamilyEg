@@ -20,6 +20,8 @@ import { PostInputComponent } from './post-input/post-input.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { UserInfoComponent } from './profile/user-info/user-info.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
   //home
@@ -27,11 +29,13 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   //signIn
   { path: 'signIn', component: SignInComponent },
+  {path:'signUp', component:SignUpComponent},
   //profile
   {
     path: 'profile', component: ProfileComponent, children: [
       { path: '', component: PostInputComponent },
-      { path: 'edit_profile', component: EditProfileComponent }
+      { path: 'edit_profile', component: EditProfileComponent },
+      {path: 'User-Info' , component: UserInfoComponent},
     ]
   },
   //dashboard
