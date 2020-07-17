@@ -1,9 +1,41 @@
 <app-dashboard-main-layout [title]="'Dashboard'">
-  <div class="row justify-content-center">
-    <div class="profile profile pt-3 pb-5 px-5">
-      <div class="img my-3"></div>
-      <h4>Tarek Mahmoud</h4>
-      <p>Full access</p>
+  <div class="py-2">
+    <div class="row flex-wrap justify-content-center">
+      <div>
+        <!-- profile card -->
+        <div class="card profile pt-3 pb-5 px-5">
+          <div class="img my-3"></div>
+          <h4>Tarek Mahmoud</h4>
+          <p>Full access</p>
+        </div>
+        <div class="adding card">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Add New...
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">New Event</a>
+              <a class="dropdown-item" href="#">New Form</a>
+              <a class="dropdown-item" href="#">New Perefence</a>
+              <a class="dropdown-item" href="#">New Interview</a>
+              <a class="dropdown-item" href="#">New Group discussion</a>
+              <a class="dropdown-item" href="#">New Member</a>
+              <a class="dropdown-item" href="#">New Admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Logs -->
+      <div class="card logs pt-3 pb-5 px-4 text-left">
+        <h3>Lateset Logs</h3>
+        <!-- no data available -->
+        <div class="no_data">
+          <h1 class="text-center">
+            No Logs for today
+          </h1>
+        </div>
+      </div>
+
     </div>
   </div>
 </app-dashboard-main-layout>

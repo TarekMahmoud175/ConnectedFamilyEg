@@ -9,7 +9,9 @@
 .head {
     font-size: 35px;
 }
-
+nav{
+    background-color: white !important;
+}
 .nav-link {
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
@@ -20,7 +22,16 @@
 .nav-link:hover {
     color: black !important;
 }
-
+.search {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.search input{
+    border: 0;
+    box-shadow: none !important;
+}
 .dropdown-menu {
     font-family: 'Dosis', sans-serif;
     border: 0;
@@ -40,6 +51,7 @@
     content: "";
     position: absolute;
     top: -4%;
+    z-index: -1;
     left: 45%;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
@@ -138,3 +150,4 @@
     background: #83b9db;
     border-color: #83b9db;
 }
+

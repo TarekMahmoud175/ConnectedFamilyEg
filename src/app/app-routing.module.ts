@@ -29,13 +29,13 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   //signIn
   { path: 'signIn', component: SignInComponent },
-  {path:'signUp', component:SignUpComponent},
+  { path: 'signUp', component: SignUpComponent },
   //profile
   {
     path: 'profile', component: ProfileComponent, children: [
       { path: '', component: PostInputComponent },
       { path: 'edit_profile', component: EditProfileComponent },
-      {path: 'User-Info' , component: UserInfoComponent},
+      { path: 'User-Info', component: UserInfoComponent },
     ]
   },
   //dashboard

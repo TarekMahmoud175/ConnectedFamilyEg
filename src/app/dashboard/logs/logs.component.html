@@ -4,7 +4,9 @@
       <!-- search -->
       <div class="form-group mb-0">
         <div class="p-0 position-relative">
-          <label for="search" class="position-absolute"><i class="fas fa-search"></i></label>
+          <label for="search" class="position-absolute">
+            <img src="assets/icons/search.svg" width="20px" alt="search icon">
+          </label>
           <input id="search" type="text" class="form-control search-input" name="search" placeholder="Search for event">
         </div>
       </div>
@@ -16,15 +18,15 @@
           <tr>
             <th scope="col" width="15">#</th>
             <th scope="col">Name</th>
-            <th scope="col">Actions</th>
+            <th scope="col" >Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td><a [routerLink]="['/dashboard/logs/id']">laravel-2020-07-13.log</a> </td>
+            <td><a [routerLink]="['/dashboard/logs/id']" class="link">laravel-2020-07-13.log</a> </td>
             <td>
-              <button class="publish" [routerLink]="['/dashboard/logs/id']">View Log</button>
+              <button class="view" [routerLink]="['/dashboard/logs/id']"><i class="far fa-eye mr-1"></i>View</button>
             </td>
           </tr>
         </tbody>

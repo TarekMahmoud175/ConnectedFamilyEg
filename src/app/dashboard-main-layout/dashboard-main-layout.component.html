@@ -4,7 +4,8 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <button class="navbar-toggler" [ngClass]="{'active': dropmenu}" type="button" data-toggle="collapse"
+        <!-- sidebar toggle -->
+        <button id="sideBar_toggle" class="navbar-toggler" [ngClass]="{'active': dropmenu}" type="button" data-toggle="collapse"
           data-target="#sideNav" aria-expanded="false" aria-label="Toggle navigation" (click)="drop($event)">
           <svg viewBox="0 0 64 48">
             <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
@@ -12,6 +13,13 @@
             <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
           </svg>
         </button>
+        <!-- search -->
+        <ul class="navbar-nav mr-auto">
+          <form class="form-inline my-2 my-lg-0 search">
+            <img src="assets/icons/search.svg" width="20px" alt="search icon">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+          </form>
+        </ul>
         <ul class="navbar-nav ml-auto">
           <!-- dropdown -->
           <li class="nav-item dropdown">

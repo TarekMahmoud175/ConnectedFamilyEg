@@ -3,28 +3,24 @@
     padding-bottom: .5rem !important;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .search label {
-    top: 18%;
-    left: 13px;
-    margin: 0;
-    text-shadow: none;
-    color: #626262;
-    font-size: .9rem;
+    top: 7%;
+    left: 10px;
 }
 
 .search .search-input {
-    border: 1px solid #e1e1e1e3;
+    border: 0;
+    box-shadow: 0 0 5px #dee2e6 !important;
     padding-left: 35px;
     font-size: smaller;
+    width: 225px;
 }
 
 .search .search-input:focus {
     box-shadow: none;
 }
-
 table {
     background: white;
     border-radius: 5px;
@@ -33,7 +29,9 @@ table {
 .table thead th {
     border-top: 0;
 }
-
+.table-hover tbody tr:hover{
+    background: rgba(127, 185, 224, 0.14) !important;
+}
 .table td {
     border: 0;
 }
@@ -41,14 +39,18 @@ table {
 .table td a {
     color: #1c3053;
     text-decoration: none;
+    transition: 500ms ease;
 }
-.publish{
-    font-size: .9rem;
+.view{
+    font-size: 1rem;
     border: 0;
-    background: #00ff89;
-    color: white;
+    background: transparent;
+    color: #1c3053;
     font-weight: 900;
     border-radius: 5px;
-    padding: 8px;
-
+    /* padding: 8px; */
+    transition: 500ms ease;
+}
+.view:hover,.link:hover{
+    color: blue !important;
 }
