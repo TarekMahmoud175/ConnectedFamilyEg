@@ -145,6 +145,17 @@ nav{
     transition: 500ms ease;
     background: #4ca0d6;
     border-color: #4ca0d6;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.add a i{
+    background: white;
+    color: #4ca0d6;
+    border-radius: 50%;
+    padding: 10px 7px;
+    font-size: 12px;
+    line-height: 5px;
 }
 .add a:hover{
     background: #83b9db;

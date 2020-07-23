@@ -40,6 +40,11 @@ import { PostInputComponent } from './post-input/post-input.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import { UsersComponent } from './dashboard/users/users.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,6 +79,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     SignInComponent,
     UserInfoComponent,
     SignUpComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +89,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
     NgxSpinnerModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -22,6 +22,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { UserInfoComponent } from './profile/user-info/user-info.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { UsersComponent } from './dashboard/users/users.component';
 
 const routes: Routes = [
   //home
@@ -54,9 +55,11 @@ const routes: Routes = [
   // interviews
   { path: 'dashboard/interviews', component: InterviewsComponent },
   { path: 'dashboard/interviews/add', component: AddInterviewComponent },
-  // interviews
+  // group
   { path: 'dashboard/group_discussions', component: GroupDiscussionsComponent },
   { path: 'dashboard/group_discussions/add', component: AddGroupDiscussionComponent },
+  //users
+  { path: 'dashboard/users', component: UsersComponent },
   //Logs
   { path: 'dashboard/logs', component: LogsComponent },
   { path: 'dashboard/logs/id', component: LogsComponent },

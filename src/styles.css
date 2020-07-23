@@ -16,11 +16,9 @@ body {
 @media (min-width: 768px) {
     .main {
         margin-left: auto;
-        width: 80%;
+        width: 82%;
     }
 }
 body{
     background-color: #F8F9FA;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
