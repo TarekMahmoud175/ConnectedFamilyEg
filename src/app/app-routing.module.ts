@@ -18,10 +18,11 @@ import { LogsComponent } from './dashboard/logs/logs.component';
 
 import { PostInputComponent } from './post-input/post-input.component';
 import { HomeComponent } from './home/home.component';
-import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { UserInfoComponent } from './profile/user-info/user-info.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { UsersComponent } from './dashboard/users/users.component';
 
 const routes: Routes = [
   //home
@@ -29,13 +30,13 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   //signIn
   { path: 'signIn', component: SignInComponent },
-  {path:'signUp', component:SignUpComponent},
+  { path: 'signUp', component: SignUpComponent },
   //profile
   {
     path: 'profile', component: ProfileComponent, children: [
       { path: '', component: PostInputComponent },
-      { path: 'Edit-Profile', component: EditProfileComponent },
-      {path: 'User-Info' , component: UserInfoComponent},
+      { path: 'edit_profile', component: EditProfileComponent },
+      { path: 'User-Info', component: UserInfoComponent },
     ]
   },
   //dashboard
@@ -54,9 +55,11 @@ const routes: Routes = [
   // interviews
   { path: 'dashboard/interviews', component: InterviewsComponent },
   { path: 'dashboard/interviews/add', component: AddInterviewComponent },
-  // interviews
+  // group
   { path: 'dashboard/group_discussions', component: GroupDiscussionsComponent },
   { path: 'dashboard/group_discussions/add', component: AddGroupDiscussionComponent },
+  //users
+  { path: 'dashboard/users', component: UsersComponent },
   //Logs
   { path: 'dashboard/logs', component: LogsComponent },
   { path: 'dashboard/logs/id', component: LogsComponent },

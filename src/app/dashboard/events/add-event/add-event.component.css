@@ -24,7 +24,6 @@ label {
     padding: 0;
     color: #474747;
 }
-.note{
-    font-size: .8rem;
-    color: gray;
+b{
+    cursor: pointer;
 }

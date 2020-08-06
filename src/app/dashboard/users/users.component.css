@@ -3,24 +3,28 @@
     padding-bottom: .5rem !important;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .search label {
-    top: 7%;
-    left: 10px;
+    top: 18%;
+    left: 13px;
+    margin: 0;
+    text-shadow: none;
+    color: #626262;
+    font-size: .9rem;
 }
 
 .search .search-input {
-    border: 0;
-    box-shadow: 0 0 5px #dee2e6 !important;
+    border: 1px solid #e1e1e1e3;
     padding-left: 35px;
     font-size: smaller;
-    width: 225px;
 }
 
 .search .search-input:focus {
     box-shadow: none;
 }
+
 table {
     background: white;
     border-radius: 5px;

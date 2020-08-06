@@ -1,9 +1,131 @@
 <app-dashboard-main-layout [title]="'Dashboard'">
-  <div class="row justify-content-center">
-    <div class="profile profile pt-3 pb-5 px-5">
-      <div class="img my-3"></div>
-      <h4>Tarek Mahmoud</h4>
-      <p>Full access</p>
-    </div>
+  <div class="py-2">
+    <!-- first section -->
+    <section class="row flex-wrap justify-content-center flex-column-reverse flex-lg-row">
+      <ngx-charts-pie-grid [results]="saleData">
+      </ngx-charts-pie-grid>
+
+    </section>
+    <!-- second section -->
+    <section class="row flex-wrap justify-content-center flex-column-reverse flex-lg-row">
+      <!-- Logs -->
+      <div class="card logs pt-3 pb-5 px-4 text-left">
+        <h3>Lateset Logs</h3>
+        <!-- no data available -->
+        <div class="no_data">
+          <h2 class="text-center">
+            No Logs for today
+          </h2>
+        </div>
+      </div>
+      <div class="d-flex flex-lg-column flex-row justify-content-center">
+        <!-- date -->
+        <div class="card date p-3">
+          <div class="d-flex justify-content-center align-items-center">
+            <span>
+              Thursday <br> July 23 2020
+            </span>
+          </div>
+        </div>
+        <!-- add new -->
+        <div class="card adding p-3" data-toggle="modal" data-target="#adding_new">
+          <div class="d-flex justify-content-center align-items-center">
+            <span>
+              New
+            </span>
+          </div>
+        </div>
+        <!-- model -->
+        <div class="modal fade" id="adding_new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content border-0">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="exampleModalLabel">Add New</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="new d-flex flex-wrap justify-content-center">
+                  <!-- event -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/events/add')">
+                    <img class="new_img" src="assets/icons/calendar.svg" alt="calender">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Event
+                      </span>
+                    </div>
+                  </div>
+                  <!-- form -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/forms/add')">
+                    <img class="new_img" src="assets/icons/form.svg" alt="form">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Form
+                      </span>
+                    </div>
+                  </div>
+                  <!-- pref -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/preferences/add')">
+                    <img class="new_img" src="assets/icons/star.svg" alt="star">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Perefence
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Interview -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/interviews/add')">
+                    <img class="new_img" src="assets/icons/calendar.svg" alt="calender">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Interview
+                      </span>
+                    </div>
+                  </div>
+                  <!-- group discussion -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/group_discussions/add')">
+                    <img class="new_img" src="assets/icons/calendar.svg" alt="calender">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Group discussion
+                      </span>
+                    </div>
+                  </div>
+                  <!-- member -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/users/add')">
+                    <img class="new_img" src="assets/icons/users.svg" alt="users">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Member
+                      </span>
+                    </div>
+                  </div>
+                  <!-- admin -->
+                  <div class="card adding p-3" (click)="addNew('/dashboard/users/add')">
+                    <img class="new_img" src="assets/icons/users.svg" alt="users">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span>
+                        Admin
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile -->
+      <div>
+        <!-- profile card -->
+        <div class="card profile pt-3 pb-5 px-5">
+          <div class="img my-3"></div>
+          <h4>Tarek Mahmoud</h4>
+          <p>Full access</p>
+        </div>
+      </div>
+    </section>
   </div>
 </app-dashboard-main-layout>

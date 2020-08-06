@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-logs',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public spinner:NgxSpinnerService
+  ) { }
 
   ngOnInit(): void {
+    // this.spinner.show()
   }
 
 }

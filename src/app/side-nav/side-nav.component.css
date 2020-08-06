@@ -1,11 +1,13 @@
 /* sidenav */
 #sideNav {
     transition: 500ms ease;
-    background: white;
+    /* background: white; */
+    background: #47494a;
     position: fixed;
     height: 100%;
     top: 0;
-    width: 20%;
+    /* width: 20%; */
+    width: 18%;
 }
 
 .nav {
@@ -13,36 +15,43 @@
     flex-direction: column;
     max-width: 100%;
     width: 100%;
-    background: #f8f9fa!important;
+    /* background: #f8f9fa !important; */
+    background: #38454e !important;
     height: 100%;
     border: 0;
     display: block;
     overflow: overlay;
     touch-action: unset;
 }
-.brand{
+
+.brand {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
-.brand span{
+
+.brand span {
     font-family: 'Cookie', cursive;
     font-size: 23px;
+    color: white;
 }
+
 @media (max-width: 767px) {
     .admin-name {
         display: none;
     }
+
     #sideNav {
         transition: 10ms ease;
         z-index: 10;
-        width: 80%;
+        width: 100%;
         background: #a5a5a54f;
-        box-shadow: none !important;
+        box-shadow: 0 0 20px rgba(0, 123, 255, .25);
     }
 
     .nav {
         position: absolute;
+        width: 65%;
     }
 }
 
@@ -50,6 +59,7 @@
     #sideNav {
         display: block;
     }
+
     .mains {
         padding-left: 15rem !important;
     }
@@ -70,7 +80,8 @@
     border: 1px solid transparent;
     transition: 500ms ease;
     border-radius: 2px;
-    color: #3f4253;
+    /* color: #3f4253; */
+    color: white;
     clip-path: circle(100% at 10% 10%);
 }
 
@@ -91,11 +102,13 @@
 .nav .nav-item .nav-link:hover,
 .nav .nav-item .navbar-collapse .li:hover,
 .dropdown-menu .dropdown-item:hover {
-    background: #e5f2fb;
+    /* background: #e5f2fb; */
+    background: #2a333a;
     color: #3587b6;
-    cursor: pointer;clip-path: circle(75%);
+    cursor: pointer;
+    clip-path: circle(75%);
     border-left: 2px solid #3587b6;
-    
+    transform: scale(1.05);
 }
 
 .nav .nav-item .nav-link:hover i {
@@ -115,7 +128,7 @@
     clip-path: circle(100% at 10% 10%);
 }
 
-.nav .nav-item .navbar-collapse .li a{
+.nav .nav-item .navbar-collapse .li a {
     padding: 5px;
     color: #222b3a;
     transition: 400ms ease;

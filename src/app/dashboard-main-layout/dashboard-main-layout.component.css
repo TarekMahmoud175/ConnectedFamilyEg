@@ -9,7 +9,9 @@
 .head {
     font-size: 35px;
 }
-
+nav{
+    background-color: white !important;
+}
 .nav-link {
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
@@ -20,7 +22,16 @@
 .nav-link:hover {
     color: black !important;
 }
-
+.search {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.search input{
+    border: 0;
+    box-shadow: none !important;
+}
 .dropdown-menu {
     font-family: 'Dosis', sans-serif;
     border: 0;
@@ -40,6 +51,7 @@
     content: "";
     position: absolute;
     top: -4%;
+    z-index: -1;
     left: 45%;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
@@ -127,14 +139,38 @@
 .navbar-toggler.active svg path:nth-child(3) {
     --offset: 58px;
 }
+/* .header{
+    transition: ;
 
-
+} */
+.fixed_header{
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+    background-color: white;
+    top: 0;
+}
+.fixed_header h3{
+    font-size: 16px;
+}
 .add a{
     transition: 500ms ease;
     background: #4ca0d6;
     border-color: #4ca0d6;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.add a i{
+    background: white;
+    color: #4ca0d6;
+    border-radius: 50%;
+    padding: 10px 7px;
+    font-size: 12px;
+    line-height: 5px;
 }
 .add a:hover{
     background: #83b9db;
     border-color: #83b9db;
 }
+

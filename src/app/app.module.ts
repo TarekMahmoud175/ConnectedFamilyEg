@@ -34,11 +34,21 @@ import { CommiteesComponent } from './commitees/commitees.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { UserInfoComponent } from './profile/user-info/user-info.component';
-import { EditProfileComponent } from './profile/Edit-profile/Edit-Profile.component';
 import { PostInputComponent } from './post-input/post-input.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatNativeDateModule } from "@angular/material/core";
+
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import { UsersComponent } from './dashboard/users/users.component';
+import { NgxChartsModule }from '@swimlane/ngx-charts';
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
   declarations: [
@@ -74,6 +84,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     SignInComponent,
     UserInfoComponent,
     SignUpComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +94,14 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
     NgxSpinnerModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule,
+    MatSortModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    NgxChartsModule,
+    DirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent],
