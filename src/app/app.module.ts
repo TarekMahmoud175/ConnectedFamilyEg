@@ -40,10 +40,15 @@ import { PostInputComponent } from './post-input/post-input.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatNativeDateModule } from "@angular/material/core";
+
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import { UsersComponent } from './dashboard/users/users.component';
-
+import { NgxChartsModule }from '@swimlane/ngx-charts';
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
   declarations: [
@@ -91,7 +96,12 @@ import { UsersComponent } from './dashboard/users/users.component';
     NgxSpinnerModule,
     AppRoutingModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    NgxChartsModule,
+    DirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent],

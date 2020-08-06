@@ -2,6 +2,12 @@
   <div class="py-2">
     <!-- first section -->
     <section class="row flex-wrap justify-content-center flex-column-reverse flex-lg-row">
+      <ngx-charts-pie-grid [results]="saleData">
+      </ngx-charts-pie-grid>
+
+    </section>
+    <!-- second section -->
+    <section class="row flex-wrap justify-content-center flex-column-reverse flex-lg-row">
       <!-- Logs -->
       <div class="card logs pt-3 pb-5 px-4 text-left">
         <h3>Lateset Logs</h3>
@@ -30,7 +36,8 @@
           </div>
         </div>
         <!-- model -->
-        <div class="modal fade" id="adding_new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="adding_new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content border-0">
               <div class="modal-header border-0">
@@ -42,7 +49,7 @@
               <div class="modal-body">
                 <div class="new d-flex flex-wrap justify-content-center">
                   <!-- event -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/events/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/events/add')">
                     <img class="new_img" src="assets/icons/calendar.svg" alt="calender">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>
@@ -51,7 +58,7 @@
                     </div>
                   </div>
                   <!-- form -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/forms/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/forms/add')">
                     <img class="new_img" src="assets/icons/form.svg" alt="form">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>
@@ -60,7 +67,7 @@
                     </div>
                   </div>
                   <!-- pref -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/preferences/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/preferences/add')">
                     <img class="new_img" src="assets/icons/star.svg" alt="star">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>
@@ -69,7 +76,7 @@
                     </div>
                   </div>
                   <!-- Interview -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/interviews/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/interviews/add')">
                     <img class="new_img" src="assets/icons/calendar.svg" alt="calender">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>
@@ -78,7 +85,7 @@
                     </div>
                   </div>
                   <!-- group discussion -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/group_discussions/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/group_discussions/add')">
                     <img class="new_img" src="assets/icons/calendar.svg" alt="calender">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>
@@ -87,7 +94,7 @@
                     </div>
                   </div>
                   <!-- member -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/users/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/users/add')">
                     <img class="new_img" src="assets/icons/users.svg" alt="users">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>
@@ -96,7 +103,7 @@
                     </div>
                   </div>
                   <!-- admin -->
-                  <div class="card adding p-3" [routerLink]="['/dashboard/users/add']">
+                  <div class="card adding p-3" (click)="addNew('/dashboard/users/add')">
                     <img class="new_img" src="assets/icons/users.svg" alt="users">
                     <div class="d-flex justify-content-center align-items-center">
                       <span>

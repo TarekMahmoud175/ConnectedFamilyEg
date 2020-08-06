@@ -5,7 +5,7 @@
       <div class="col-md-12 p-0">
         <div class="form">
           <div class="container">
-            <p class="note"><i class="far fa-circle red mr-1"></i> New events by default is not published, You can publish it from manage events page.</p>
+            <p class="note blue"><i class="far fa-circle red mr-1"></i> New events by default is not published, You can publish it from <b class="red px-1" [routerLink]="['/dashboard/events']"> Events</b> page.</p>
             <!-- names -->
             <div class="form-group row">
               <!-- name -->
@@ -42,7 +42,13 @@
               </div>
               <div class="col-md-6  mb-3">
                 <label for="end_date" class="col">End Date</label>
-                <input id="end_date" type="date" class="form-control" placeholder="End Date">
+                <!-- <input id="end_date" type="date" class="form-control" placeholder="End Date"> -->
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Choose a date</mat-label>
+                  <input matInput [matDatepicker]="picker">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker touchUi #picker></mat-datepicker>
+                </mat-form-field>
               </div>
             </div>
           </div>
