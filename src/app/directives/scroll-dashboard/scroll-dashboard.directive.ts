@@ -17,11 +17,14 @@ export class ScrollDashboardDirective {
     public renderer: Renderer2
   ) { }
   ngOnInit() {
-    this.renderer.setStyle(this.header, 'webkitTransition', '900ms')
+    this.renderer.setStyle(this.header, 'webkitTransition', '900ms ease')
   }
 
   @HostListener('window:scroll', ['$event']) onContentScroll(e) {
-    // this.scrollContent = document.scrollTop
-    this.renderer.addClass(this.header, 'fixed_header')
+    if(window.scrollY <= 6){
+      this.renderer.removeClass(this.header, 'fixed_header')
+    }else{
+      this.renderer.addClass(this.header, 'fixed_header')
+    }
   }
 }

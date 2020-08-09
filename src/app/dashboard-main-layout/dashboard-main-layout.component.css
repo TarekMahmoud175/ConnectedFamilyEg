@@ -139,19 +139,19 @@ nav{
 .navbar-toggler.active svg path:nth-child(3) {
     --offset: 58px;
 }
-/* .header{
-    transition: ;
-
-} */
+.header{
+    transition: 500ms ease;
+}
 .fixed_header{
     position: fixed;
     width: 100%;
     z-index: 12;
     background-color: white;
     top: 0;
+    padding: 10px 16px !important;
 }
 .fixed_header h3{
-    font-size: 16px;
+    font-size: 22px;
 }
 .add a{
     transition: 500ms ease;

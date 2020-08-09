@@ -18,6 +18,9 @@ body {
         margin-left: auto;
         width: 82%;
     }
+    .fixed_header{
+        width: 82%;
+    }
 }
 body{
     background-color: #F8F9FA;
