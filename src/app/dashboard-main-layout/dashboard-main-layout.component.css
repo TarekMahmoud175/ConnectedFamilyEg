@@ -42,8 +42,8 @@ nav{
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute;
-        min-width: 15rem !important;
-        left: -90%;
+        min-width: 13rem !important;
+        left: -80%;
     }
 }
 

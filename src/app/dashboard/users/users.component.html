@@ -1,3 +1,21 @@
 <app-dashboard-main-layout [title]="'Users'">
+  <div class="card p-4">
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="Users">Content 1</mat-tab>
+      <mat-tab label="Members">Content 2</mat-tab>
+      <mat-tab label="Admins">
 
+        <div class="d-flex flex-wrap justify-content-center flex-column-reverse flex-lg-row">
+          <!-- profile card -->
+          <div class="profile py-4 px-5" (click)="openDialog()">
+            <div class="img my-3"></div>
+            <h5>Tarek Mahmoud</h5>
+            <p>Full access</p>
+          </div>
+
+        </div>
+
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </app-dashboard-main-layout>

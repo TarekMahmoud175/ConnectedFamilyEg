@@ -1,3 +1,49 @@
+.card {
+    box-shadow: 0 0 5px #dee2e6 !important;
+    background: white;
+    transition: 500ms ease-in-out;
+    margin: 8px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.profile {
+    text-align: center;
+    box-shadow: 0 0 2px #bbbbbb !important;
+    background: white;
+    transition: 500ms ease;
+    margin: 8px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.profile:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px #dee2e6 !important;
+}
+
+.profile .img {
+    background-image: url('../../../assets/WhatsApp Image 2019-04-19 at 2.13.31 AM (2).jpeg');
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    background-size: cover;
+    box-shadow: 2px 6px 18px #e0e0e0;
+}
+
+.profile p {
+    font-size: .8rem;
+    background: #e5f2fb;
+    width: fit-content;
+    margin: auto;
+    padding: .4rem 1rem;
+    color: #3587b6;
+    border-radius: 31px;
+}
+
+
 /* table */
 .search {
     padding-bottom: .5rem !important;
@@ -42,7 +88,8 @@ table {
     color: #1c3053;
     text-decoration: none;
 }
-.publish{
+
+.publish {
     font-size: .9rem;
     border: 0;
     background: #00ff89;

@@ -31,42 +31,15 @@
       </li>
       <!-- Preferences -->
       <li class="nav-item">
-        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
-          data-target="#side_nav_preferences"><i class="fas fa-star mr-2"></i>Preferences</a>
-        <div class="collapse navbar-collapse" id="side_nav_preferences">
-          <div class="li" [routerLink]="['/dashboard/preferences/add']">
-            <a class="dropdown-li">Add</a>
-          </div>
-          <div class="li" [routerLink]="['/dashboard/preferences']">
-            <a class="dropdown-li">View and Manege</a>
-          </div>
-        </div>
+        <a class="nav-link" [routerLink]="['/dashboard/preferences']"><i class="fas fa-star mr-2"></i>Preferences</a>
       </li>
       <!-- interviews -->
       <li class="nav-item">
-        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
-          data-target="#side_nav_interviews"><i class="fas fa-calendar-alt mr-2"></i>Interviews</a>
-        <div class="collapse navbar-collapse" id="side_nav_interviews">
-          <div class="li">
-            <a class="dropdown-li" [routerLink]="['/dashboard/interviews/add']">Add</a>
-          </div>
-          <div class="li">
-            <a class="dropdown-li" [routerLink]="['/dashboard/interviews']">View and Manege</a>
-          </div>
-        </div>
+        <a class="nav-link" [routerLink]="['/dashboard/interviews']"><i class="fas fa-calendar-alt mr-2"></i>Interviews</a>
       </li>
       <!-- group desciussion -->
       <li class="nav-item">
-        <a class="nav-link" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="collapse"
-          data-target="#side_nav_descussion"><i class="fas fa-calendar-alt mr-2"></i>Group Discussions</a>
-        <div class="collapse navbar-collapse" id="side_nav_descussion">
-          <div class="li">
-            <a class="dropdown-li" [routerLink]="['/dashboard/group_discussions/add']">Add</a>
-          </div>
-          <div class="li">
-            <a class="dropdown-li" [routerLink]="['/dashboard/group_discussions']">View and Manege</a>
-          </div>
-        </div>
+        <a class="nav-link" [routerLink]="['/dashboard/group_discussions']"><i class="fas fa-calendar-alt mr-2"></i>Group Discussions</a>
       </li>
       <!-- participants -->
       <li class="nav-item">

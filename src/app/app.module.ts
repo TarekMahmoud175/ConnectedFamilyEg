@@ -49,6 +49,9 @@ import {MatSortModule} from '@angular/material/sort';
 import { UsersComponent } from './dashboard/users/users.component';
 import { NgxChartsModule }from '@swimlane/ngx-charts';
 import { DirectivesModule } from './directives/directives.module';
+import {MatTabsModule} from '@angular/material/tabs';
+import { UserDialogComponent } from './dashboard/users/user-dialog/user-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -85,6 +88,7 @@ import { DirectivesModule } from './directives/directives.module';
     UserInfoComponent,
     SignUpComponent,
     UsersComponent,
+    UserDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -101,7 +105,9 @@ import { DirectivesModule } from './directives/directives.module';
     MatFormFieldModule,
     MatNativeDateModule,
     NgxChartsModule,
-    DirectivesModule
+    DirectivesModule,
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
