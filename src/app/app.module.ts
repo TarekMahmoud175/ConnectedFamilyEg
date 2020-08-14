@@ -52,6 +52,7 @@ import { DirectivesModule } from './directives/directives.module';
 import {MatTabsModule} from '@angular/material/tabs';
 import { UserDialogComponent } from './dashboard/users/user-dialog/user-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { EventCardComponent } from './dashboard/events/event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     SignUpComponent,
     UsersComponent,
     UserDialogComponent,
+    EventCardComponent,
   ],
   imports: [
     BrowserModule,

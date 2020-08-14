@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { EventCardComponent } from './event-card/event-card.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-events',
@@ -17,10 +19,16 @@ export class EventsComponent implements OnInit {
     { id: 4 ,unique:103,year:2018,name:'Eureka4',start:"2018-04-15 22:00:00",end:"2018-04-15 22:00:00",description:"Bla kfayaaa",pref_type:"2r1",published:false}
   ];
   displayedColumns: string[] = ['id','unique','year','start','end','description','pref_type','published'];
-  constructor() { 
+  constructor(
+    public dialog: MatDialog
+  ) { 
     this.dataSource = new MatTableDataSource(this.events);
   }
   ngOnInit(): void { 
     this.dataSource.sort = this.sort;
+  }
+
+  openEventCard(){
+    this.dialog.open(EventCardComponent);
   }
 }
